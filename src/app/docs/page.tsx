@@ -40,7 +40,7 @@ export default function DocsPage() {
         <div className="border-[2.5px] border-black rounded-xl p-4 bg-white shadow-[4px_4px_0px_0px_#000000]">
           <p className="text-xs font-mono font-bold text-neutral-500 uppercase">Base URL</p>
           <code className="text-base font-mono font-bold text-neutral-900 block mt-1">
-            https://YOUR-DOMAIN
+            https://og-codeshare.vercel.app
           </code>
         </div>
 
@@ -110,7 +110,7 @@ export default function DocsPage() {
         <div className="space-y-2 pt-2">
           <h4 className="text-xs font-extrabold uppercase text-neutral-700">cURL Example</h4>
           <pre className="p-4 bg-neutral-900 text-neutral-100 rounded-xl text-xs font-mono overflow-x-auto border-2 border-black">
-{`curl -X POST "https://YOUR-DOMAIN/api/og/product" \\
+{`curl -X POST "https://og-codeshare.vercel.app/api/og/product" \\
   -H "Content-Type: application/json" \\
   -d '{
     "name": "Raiden Ai V19",
@@ -149,7 +149,7 @@ export default function DocsPage() {
         <div className="space-y-2 pt-2">
           <h4 className="text-xs font-extrabold uppercase text-neutral-700">JavaScript / TypeScript Fetch Example</h4>
           <pre className="p-4 bg-neutral-900 text-neutral-100 rounded-xl text-xs font-mono overflow-x-auto border-2 border-black">
-{`const response = await fetch("https://YOUR-DOMAIN/api/og/snippet", {
+{`const response = await fetch("https://og-codeshare.vercel.app/api/og/snippet", {
   method: "POST",
   headers: { "Content-Type": "application/json" },
   body: JSON.stringify({
